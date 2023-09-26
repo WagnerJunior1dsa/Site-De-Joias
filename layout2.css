@@ -1,0 +1,317 @@
+@import url('https://fonts.cdnfonts.com/css/palatino');
+@import url('https://fonts.cdnfonts.com/css/neue-machina-light');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@font-face {
+  font-family: minhafonte;
+  src: url('NeueMachina-Light.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.xd h1 {
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: 'Palatino', sans-serif;
+  z-index: 5;
+  margin-top: 34px;
+}
+
+.header nav {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  font-size: 25px;
+  height: 100px;
+}
+
+.header nav ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+  list-style: none;
+  font-family: 'Palatino', sans-serif;
+  z-index: 5;
+
+}
+
+.header nav li {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  float: right;
+  display: flex;
+  font-family: 'minhafonte';
+  z-index: 5;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  z-index: 5;
+  height: 40px;
+  /* Adicione esta linha para definir a cor da fonte como preta */
+}
+
+
+.header nav a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+
+.zica2 {
+  padding-left: 70vh;
+}
+
+.zica2 li {
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.content {
+  font-family: 'minhafonte';
+}
+
+.banner {
+  margin-top: 6%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video {
+  margin-top: 6%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner .content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 5.5em;
+  color: black;
+  text-transform: uppercase;
+}
+
+.banner .content p {
+  font-size: 1.5em;
+  color: black;
+
+}
+
+.button {
+  display: flex;
+  z-index: 2;
+
+  color: white;
+
+}
+
+.btn {
+  transition: all 0.7s ease-in-out 0s;
+  font-family: 'minhafonte';
+  margin-top: 2%;
+  background-color: black;
+  color: white;
+  width: 15%;
+  height: 20%;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.btn:hover {
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 60px black;
+  cursor: grab;
+  border: 2px solid black;
+  z-index: 2;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+
+.button h3 {
+  color: white;
+  font-size: 2.0em;
+}
+
+footer {
+  width: 100%;
+  float: right;
+  margin-left: 3%;
+
+}
+
+.rodape .redesocial li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 5px;
+  margin-right: 5%;
+}
+
+.rodape .redesocial i {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.rodape .redesocial p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+
+.rodape .redesocial {
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  float: right;
+
+}
+
+.rodape .redesocial h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.rodape .redesocial ul {
+  flex-direction: column;
+}
+
+.rodape .redesocial nav {
+  float: left;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+.principal {
+  background-color: black;
+  text-align: center;
+}
+
+.principal h3 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.rodape .redesocial a {
+  text-decoration: none;
+  color: white;
+}
+.language-buttons {
+  text-align: center;
+  
+ 
+}
+
+.language-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: white;
+}
+.language-button p {
+  color: black;
+  font-weight: bold;
+
+}
+.language-button:hover {
+  color: #fff;
+  border: 2px solid white;
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .xd h1 {
+    font-size: 23px;
+    margin-top: 30px;
+  }
+
+  .header nav ul {
+    font-size: 23px;
+  }
+
+  .zica2 {
+    padding-left: 80vh;
+  }
+
+  .zica2 li {
+    margin-top: 0;
+    margin-right: 30px;
+  }
+
+  .button {
+    flex-direction: row;
+  }
+
+  .btn {
+    width: auto;
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .rodape .redesocial li {
+    margin-bottom: 0;
+  }
+
+  .rodape .redesocial nav {
+    margin-bottom: 0;
+  }
+}
+

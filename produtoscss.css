@@ -1,0 +1,347 @@
+@import url('https://fonts.cdnfonts.com/css/palatino');
+@import url('https://fonts.cdnfonts.com/css/neue-machina-light');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@font-face {
+  font-family: minhafonte;
+  src: url('NeueMachina-Light.otf');
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+   max-width: 100vw;
+
+
+}
+
+.xd h1 {
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: 'Palatino', sans-serif;
+  z-index: 5;
+  margin-top: 34px;
+}
+
+.header nav {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  font-size: 25px;
+  height: 100px;
+}
+
+.header nav ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+  list-style: none;
+  font-family: 'Palatino', sans-serif;
+  z-index: 5;
+
+}
+
+.header nav li {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  float: right;
+  display: flex;
+  font-family: 'minhafonte';
+  z-index: 5;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  z-index: 5;
+  height: 40px;
+  /* Adicione esta linha para definir a cor da fonte como preta */
+}
+
+
+.header nav a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+
+.zica2 {
+  padding-left: 70vh;
+}
+
+.zica2 li {
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+footer {
+  width: 100%;
+  float: right;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.rodape .redesocial li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.rodape .redesocial i {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.rodape .redesocial p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+
+.rodape .redesocial {
+
+  display: flex;
+  width: 100%;
+  background-color: black;
+  float: right;
+
+}
+
+.rodape .redesocial h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.rodape .redesocial ul {
+  flex-direction: column;
+}
+
+.rodape .redesocial nav {
+  float: left;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+.principal {
+  background-color: black;
+  text-align: center;
+}
+
+.principal h3 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.rodape .redesocial a {
+  text-decoration: none;
+  color: white;
+}
+
+.modelos h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.modelos {
+  margin-top: 1%;
+  padding: 10px;
+  background: black;
+  border-radius: 20px;
+  padding-bottom: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.modelos h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  margin-right: 5%;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5px;
+}
+
+.imagem-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.imagem-secundaria {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+}
+
+.imagem-container:hover .imagem-secundaria {
+  opacity: 1;
+}
+
+.modelos img {
+  border-radius: 10px;
+
+}
+
+.modelos tr {
+  align-items: center;
+}
+
+.modelos tr {
+  padding: 0;
+  list-style: none;
+}
+
+.colecaoxd td {
+  vertical-align: top;
+  /* Define o alinhamento vertical para o topo */
+  text-align: center;
+  /* Define o alinhamento horizontal para o centro */
+  padding: 10px;
+  /* Adiciona um espaço ao redor do conteúdo */
+}
+
+
+
+.colecaoxd {
+  display: flex;
+  justify-content: center;
+}
+
+.principal {
+  background-color: black;
+  text-align: center;
+}
+
+.principal h3 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+@media (max-width: 768px) {
+  .header nav {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    
+  }
+}
+.header nav ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+  list-style: none;
+  font-family: 'Palatino', sans-serif;
+  z-index: 5;
+
+}
+
+.header nav li {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  float: right;
+  display: flex;
+  font-family: 'minhafonte';
+  z-index: 5;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  z-index: 5;
+  height: 40px;
+  /* Adicione esta linha para definir a cor da fonte como preta */
+}
+
+
+.header nav a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+.modelos {
+  margin-top: 1%;
+  padding: 10px;
+  background: black;
+  border-radius: 20px;
+  padding-bottom: 350px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.language-buttons {
+ text-align: center;
+  
+ 
+}
+
+.language-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: white;
+}
+.language-button p {
+  color: black;
+  font-weight: bold;
+
+}
+.language-button:hover {
+  color: #fff;
+  border: 2px solid white;
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
